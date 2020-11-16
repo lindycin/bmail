@@ -1,5 +1,3 @@
 hi
-<<<<<<< HEAD
 hi2
 Hi - William
-
