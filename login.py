@@ -1,17 +1,11 @@
-from flask import Flask, send_from_directory
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-DOWNLOAD_DIRECTORY = "./"
 
-@app.route('/get-files/bmail:pw.html',methods = ['GET','POST']) #how to write the path..??
-def get_files(path):
-
-    """Download a file."""
-    try:
-        return send_from_directory(DOWNLOAD_DIRECTORY, path, as_attachment=True)
-    except FileNotFoundError:
-        abort(404)
+@app.route('/') #how to write the path..??
+def password():
+	return render_template('pw.html')
 
 
 if __name__ == '__main__':

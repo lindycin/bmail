@@ -29,10 +29,14 @@
 			<!-- Prev/Next page -->
 			<div id="buttons">
 				<button onclick="location.href='./index.html'" type="button">Back</button>
-				<button onclick="location.href='./inbox.html'" type="button">Next</button>
+				<button id="authorize_button" onclick="location.href='./inbox.html'" type="button">Next</button>
 			</div>
 		</div>
 		<script src="index.js"> </script>
+		<script async defer src="https://apis.google.com/js/api.js"
+	      onload="this.onload=function(){};handleClientLoad()"
+	      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	    </script>
 	</body>
 
 
