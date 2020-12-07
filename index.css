@@ -1,16 +1,57 @@
-<html>
-<head>
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
-</head>
-<body>
+html, body {
+  	width: 100%;
+  	height: 100vh;
+}
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<div>This is a div.</div>
+body {
+  	margin: 0;
 
-</body>
-</html>
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+
+  	background-color: #baddff;
+}
+
+h1 {
+	font-size: 10vh;
+  	font-family: Roboto;
+  	font-weight: bold;
+}
+
+#bold {
+	font-weight: bold;
+}
+
+label, input, button, p, ul {
+	margin: 2vh;
+
+	font-size: 3vh;
+  	font-family: Roboto;
+}
+
+button, input, #small {
+	font-size: 2vh;
+}
+
+#small {
+	margin: 0.5vh
+}
+
+#logo {
+	border-radius: 50%;
+	width: 25%;
+	height: auto;
+}
+
+#msg, ul {
+	text-align: left;
+	font-size: 2vh;
+}
+
+#bg {
+	margin: 2vh;
+	background-color: #dceeff;
+}
